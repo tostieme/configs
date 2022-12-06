@@ -1,0 +1,15 @@
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Build
+  displayName: Build image
+  jobs:
+
+  - job: Hello_World
+    steps:
+    - bash: |
+        echo "Hello World"
+      displayName: "Hello World"
+
+
