@@ -108,6 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pip="pip3"
 alias diff="colordiff"
+alias vim="nvim"
+alias k="kubectl"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -116,3 +118,10 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 function iterm() {open $1 -a /Applications/iTerm.app; };
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
+export PATH=/usr/bin/python3:$PATH
+export PATH=/opt/homebrew/bin/pylsp:$PATH
+#export PYTHON=/usr/bin/python3
+#alias python=/usr/bin/python3
+export PATH="/Users/tostieme/.pyenv/shims:${PATH}"
+eval "$(pyenv init --path)"
