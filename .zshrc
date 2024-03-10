@@ -132,9 +132,6 @@ export COMPOSE_DOCKER_CLI_BUILD=0
 # set docker daemon socket
 # export DOCKER_HOST=unix:///Users/tostieme/.colima/default/docker.sock
 
-# AWS Keys
-# export AWS_ACCESS_KEY_ID=AKIA2OWJOOKKEY46RA4T
-# export AWS_SECRET_ACCESS_KEY=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
 export EDITOR=nvim
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
